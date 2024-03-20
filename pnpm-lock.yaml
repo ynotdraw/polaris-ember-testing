@@ -15,6 +15,12 @@ overrides:
   '@glimmer/component': ^1.1.2
 
 dependencies:
+  '@crowdstrike/glide-core-components':
+    specifier: ^0.1.1
+    version: 0.1.1(lit@3.1.2)
+  '@crowdstrike/glide-core-styles':
+    specifier: ^0.1.0
+    version: 0.1.0
   ember-modifier:
     specifier: ^4.1.0
     version: 4.1.0(ember-source@5.5.0)
@@ -24,6 +30,9 @@ dependencies:
   ember-route-template:
     specifier: ^1.0.3
     version: 1.0.3
+  lit:
+    specifier: ^3.1.2
+    version: 3.1.2
   tracked-built-ins:
     specifier: ^3.3.0
     version: 3.3.0
@@ -1462,6 +1471,20 @@ packages:
       minimist: 1.2.8
     dev: true
 
+  /@crowdstrike/glide-core-components@0.1.1(lit@3.1.2):
+    resolution: {integrity: sha512-Y7/btOMZSlm4wkNIjYIeS9T5K3FUfUocJT2eUByIHrZNQaKQPmw8jFhOiOMDLFVNva5X1+ONXmr5zLtVgAd69A==}
+    engines: {node: 20.9.0, pnpm: 8.10.5}
+    peerDependencies:
+      lit: ^3.1.0
+    dependencies:
+      lit: 3.1.2
+    dev: false
+
+  /@crowdstrike/glide-core-styles@0.1.0:
+    resolution: {integrity: sha512-NOuUXt0n9rGUMxptqGGshXuEVQEmWkNLHVfZmca6GqCAk18O1hP1Ym+GpO4cBzKL2Tx6GE+rLX/yqGr2Kk2uDg==}
+    engines: {node: 20.9.0, pnpm: 8.10.5}
+    dev: false
+
   /@csstools/css-parser-algorithms@2.5.0(@csstools/css-tokenizer@2.2.3):
     resolution: {integrity: sha512-abypo6m9re3clXA00eu5syw+oaPHbJTPapu9C4pzNsJ4hdZDzushT50Zhu+iIYXgEe1CxnRMn7ngsbV+MLrlpQ==}
     engines: {node: ^14 || ^16 || >=18}
@@ -2175,6 +2198,16 @@ packages:
       upath: 2.0.1
     dev: true
 
+  /@lit-labs/ssr-dom-shim@1.2.0:
+    resolution: {integrity: sha512-yWJKmpGE6lUURKAaIltoPIE/wrbY3TEkqQt+X0m+7fQNnAv0keydnYvbiJFP1PnMhizmIWRWOG5KLhYyc/xl+g==}
+    dev: false
+
+  /@lit/reactive-element@2.0.4:
+    resolution: {integrity: sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==}
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.2.0
+    dev: false
+
   /@ljharb/through@2.3.11:
     resolution: {integrity: sha512-ccfcIDlogiXNq5KcbAwbaO7lMh3Tm1i3khMPYpxlK8hH/W53zN81KM9coerRLOnTGu3nfXIniAmQbRI9OxbC0w==}
     engines: {node: '>= 0.4'}
@@ -2486,6 +2519,10 @@ packages:
 
   /@types/symlink-or-copy@1.2.2:
     resolution: {integrity: sha512-MQ1AnmTLOncwEf9IVU+B2e4Hchrku5N67NkgcAHW0p3sdzPe0FNMANxEm6OJUzPniEQGkeT3OROLlCwZJLWFZA==}
+
+  /@types/trusted-types@2.0.7:
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
+    dev: false
 
   /@types/yargs-parser@21.0.3:
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -8643,6 +8680,28 @@ packages:
     dependencies:
       uc.micro: 1.0.6
     dev: true
+
+  /lit-element@4.0.4:
+    resolution: {integrity: sha512-98CvgulX6eCPs6TyAIQoJZBCQPo80rgXR+dVBs61cstJXqtI+USQZAbA4gFHh6L/mxBx9MrgPLHLsUgDUHAcCQ==}
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.2.0
+      '@lit/reactive-element': 2.0.4
+      lit-html: 3.1.2
+    dev: false
+
+  /lit-html@3.1.2:
+    resolution: {integrity: sha512-3OBZSUrPnAHoKJ9AMjRL/m01YJxQMf+TMHanNtTHG68ubjnZxK0RFl102DPzsw4mWnHibfZIBJm3LWCZ/LmMvg==}
+    dependencies:
+      '@types/trusted-types': 2.0.7
+    dev: false
+
+  /lit@3.1.2:
+    resolution: {integrity: sha512-VZx5iAyMtX7CV4K8iTLdCkMaYZ7ipjJZ0JcSdJ0zIdGxxyurjIn7yuuSxNBD7QmjvcNJwr0JS4cAdAtsy7gZ6w==}
+    dependencies:
+      '@lit/reactive-element': 2.0.4
+      lit-element: 4.0.4
+      lit-html: 3.1.2
+    dev: false
 
   /livereload-js@3.4.1:
     resolution: {integrity: sha512-5MP0uUeVCec89ZbNOT/i97Mc+q3SxXmiUGhRFOTmhrGPn//uWVQdCvcLJDy64MSBR5MidFdOR7B9viumoavy6g==}

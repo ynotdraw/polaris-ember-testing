@@ -1,3 +1,5 @@
+import '@crowdstrike/glide-core-components/button.js';
+
 import { Clock } from './clock';
 import { Excite } from './excite';
 
@@ -7,6 +9,7 @@ const Welcome = <template>
     <div class="title">
       <h2>Learning Resources</h2>
       <aside>The time is <span>{{Clock}}</span></aside>
+      <cs-button>Button</cs-button>
     </div>
 
     <Links />
