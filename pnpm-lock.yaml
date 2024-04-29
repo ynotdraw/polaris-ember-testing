@@ -16,11 +16,11 @@ overrides:
 
 dependencies:
   '@crowdstrike/glide-core-components':
-    specifier: ^0.1.1
-    version: 0.1.1(lit@3.1.2)
+    specifier: ^0.2.0
+    version: 0.2.0(lit@3.1.2)
   '@crowdstrike/glide-core-styles':
-    specifier: ^0.1.0
-    version: 0.1.0
+    specifier: ^0.2.0
+    version: 0.2.0
   ember-modifier:
     specifier: ^4.1.0
     version: 4.1.0(ember-source@5.5.0)
@@ -1471,18 +1471,20 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /@crowdstrike/glide-core-components@0.1.1(lit@3.1.2):
-    resolution: {integrity: sha512-Y7/btOMZSlm4wkNIjYIeS9T5K3FUfUocJT2eUByIHrZNQaKQPmw8jFhOiOMDLFVNva5X1+ONXmr5zLtVgAd69A==}
-    engines: {node: 20.9.0, pnpm: 8.10.5}
+  /@crowdstrike/glide-core-components@0.2.0(lit@3.1.2):
+    resolution: {integrity: sha512-2WF8l0+AkfSuzt+2bOxueN74NHvVWpHAuh/F+MjMVNcrEkAUsDMEOFXhro/tSYz3b+0NYVrw9gNthnAlosyT9Q==}
+    engines: {node: '>= 20', pnpm: '>= 8'}
     peerDependencies:
       lit: ^3.1.0
     dependencies:
+      '@floating-ui/dom': 1.6.4
       lit: 3.1.2
+      ow: 1.1.1
     dev: false
 
-  /@crowdstrike/glide-core-styles@0.1.0:
-    resolution: {integrity: sha512-NOuUXt0n9rGUMxptqGGshXuEVQEmWkNLHVfZmca6GqCAk18O1hP1Ym+GpO4cBzKL2Tx6GE+rLX/yqGr2Kk2uDg==}
-    engines: {node: 20.9.0, pnpm: 8.10.5}
+  /@crowdstrike/glide-core-styles@0.2.0:
+    resolution: {integrity: sha512-6V+CTRf8m8GZp15vRoKpa5gd9W9Tl3mBq0JChpKbqxCRfryG47Q8gDOtfzGkc0E8NKaajDbDgygoucQxf69hIQ==}
+    engines: {node: '>= 20', pnpm: '>= 8'}
     dev: false
 
   /@csstools/css-parser-algorithms@2.5.0(@csstools/css-tokenizer@2.2.3):
@@ -1713,7 +1715,7 @@ packages:
     resolution: {integrity: sha512-A6tXvfwnscx66QO0R3c2dIJwEltfsTL4ihsYjMtgP9ODCCmQlCaRlZDQYw5Drta0ER9Fj3nXntu4naV5Wt5XLA==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
-      '@glint/template': ^1.2.1
+      '@glint/template': ^1.0.0
     peerDependenciesMeta:
       '@glint/template':
         optional: true
@@ -1819,6 +1821,23 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@floating-ui/core@1.6.1:
+    resolution: {integrity: sha512-42UH54oPZHPdRHdw6BgoBD6cg/eVTmVrFcgeRDM3jbO7uxSoipVcmcIGFcA5jmOHO5apcyvBhkSKES3fQJnu7A==}
+    dependencies:
+      '@floating-ui/utils': 0.2.2
+    dev: false
+
+  /@floating-ui/dom@1.6.4:
+    resolution: {integrity: sha512-0G8R+zOvQsAG1pg2Q99P21jiqxqGBW1iRe/iXHsBRBxnpXKFI8QwbB4x5KmYLggNO5m34IQgOIu9SCRfR/WWiQ==}
+    dependencies:
+      '@floating-ui/core': 1.6.1
+      '@floating-ui/utils': 0.2.2
+    dev: false
+
+  /@floating-ui/utils@0.2.2:
+    resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+    dev: false
 
   /@glimmer/compiler@0.84.3:
     resolution: {integrity: sha512-cj9sGlnvExP9httxY6ZMivJRGulyaZ31DddCYB5h6LxupR4Nk2d1nAJCWPLsvuQJ8qR+eYw0y9aiY/VeT0krpQ==}
@@ -2093,8 +2112,8 @@ packages:
   /@glint/environment-ember-template-imports@1.3.0(@glint/environment-ember-loose@1.2.1)(@glint/template@1.3.0):
     resolution: {integrity: sha512-ynSc3AeFE4ZocvjI4rTS55L5sSrMexMvRtOYbVuY/u9t0PGXDjFuH/OiRiSCbHIL/jYH5Ie5uASZxs7TTCT8dw==}
     peerDependencies:
-      '@glint/environment-ember-loose': 1.2.1
-      '@glint/template': ^1.2.1
+      '@glint/environment-ember-loose': ^1.3.0
+      '@glint/template': ^1.3.0
       '@types/ember__component': ^4.0.10
       '@types/ember__helper': ^4.0.1
       '@types/ember__modifier': ^4.0.3
@@ -2334,6 +2353,11 @@ packages:
 
   /@simple-dom/interface@1.4.0:
     resolution: {integrity: sha512-l5qumKFWU0S+4ZzMaLXFU8tQZsicHEMEyAxI5kDFGhJsRqDwe0a7/iPA/GdxlGyDKseQQAgIz5kzU7eXTrlSpA==}
+
+  /@sindresorhus/is@5.6.0:
+    resolution: {integrity: sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g==}
+    engines: {node: '>=14.16'}
+    dev: false
 
   /@socket.io/component-emitter@3.1.0:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
@@ -4480,6 +4504,11 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /callsites@4.1.0:
+    resolution: {integrity: sha512-aBMbD1Xxay75ViYezwT40aQONfr+pSXTHwNKvIXhXD6+LY3F1dLIcceoC5OZKBVHbXcysz1hL9D2w0JJIMXpUw==}
+    engines: {node: '>=12.20'}
+    dev: false
+
   /can-symlink@1.0.0:
     resolution: {integrity: sha512-RbsNrFyhwkx+6psk/0fK/Q9orOUr9VMxohGd8vTa4djf4TGLfblBgUfqZChrZuW0Q+mz2eBPFLusw9Jfukzmhg==}
     hasBin: true
@@ -5375,6 +5404,13 @@ packages:
       is-obj: 2.0.0
     dev: true
 
+  /dot-prop@7.2.0:
+    resolution: {integrity: sha512-Ol/IPXUARn9CSbkrdV4VJo7uCy1I3VuSiWCaFSg+8BdUOzF9n3jefIpcgAydvUZbTdEBZs2vEiTiS9m61ssiDA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      type-fest: 2.19.0
+    dev: false
+
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
@@ -6009,9 +6045,9 @@ packages:
   /ember-resources@7.0.0(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(@glint/template@1.3.0)(ember-source@5.5.0):
     resolution: {integrity: sha512-BRah6wsXMejHWfTBFJZ+8MYeUz4ylLP4afUxK+sPCb+Nv3LKqBTEPpvahHoE5FwY56pOPhg1TQWJI/+Aj1rWWA==}
     peerDependencies:
-      '@glimmer/component': ^1.1.2
-      '@glimmer/tracking': ^1.1.2
-      '@glint/template': ^1.2.1
+      '@glimmer/component': '>= 1.1.2'
+      '@glimmer/tracking': '>= 1.1.2'
+      '@glint/template': '>= 1.0.0'
       ember-source: ^3.28.0 || ^4.0.0 || >= 5.0.0
     peerDependenciesMeta:
       '@glimmer/component':
@@ -8828,6 +8864,10 @@ packages:
     resolution: {integrity: sha512-JwObCrNJuT0Nnbuecmqr5DgtuBppuCvGD9lxjFpAzwnVtdGoDQ1zig+5W8k5/6Gcn0gZ3936HDAlGd28i7sOGQ==}
     dev: true
 
+  /lodash.isequal@4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: false
+
   /lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
     dev: true
@@ -9520,6 +9560,17 @@ packages:
   /os-tmpdir@1.0.2:
     resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
     engines: {node: '>=0.10.0'}
+
+  /ow@1.1.1:
+    resolution: {integrity: sha512-sJBRCbS5vh1Jp9EOgwp1Ws3c16lJrUkJYlvWTYC03oyiYVwS/ns7lKRWow4w4XjDyTrA2pplQv4B2naWSR6yDA==}
+    engines: {node: '>=14.16'}
+    dependencies:
+      '@sindresorhus/is': 5.6.0
+      callsites: 4.1.0
+      dot-prop: 7.2.0
+      lodash.isequal: 4.5.0
+      vali-date: 1.0.0
+    dev: false
 
   /p-defer@1.0.0:
     resolution: {integrity: sha512-wB3wfAxZpk2AzOfUMJNL+d36xothRSyj8EXOa4f6GMqYDN9BJaaSISbsk+wS9abmnebVw95C2Kb5t85UmpCxuw==}
@@ -11531,6 +11582,11 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /type-fest@2.19.0:
+    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
+    engines: {node: '>=12.20'}
+    dev: false
+
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -11738,6 +11794,11 @@ packages:
   /v8-compile-cache@2.4.0:
     resolution: {integrity: sha512-ocyWc3bAHBB/guyqJQVI5o4BZkPhznPYUG2ea80Gond/BgNWpap8TOmLSeeQG7bnh2KMISxskdADG59j7zruhw==}
     dev: true
+
+  /vali-date@1.0.0:
+    resolution: {integrity: sha512-sgECfZthyaCKW10N0fm27cg8HYTFK5qMWgypqkXMQ4Wbl/zZKx7xZICgcoxIIE+WFAP/MBL2EFwC/YvLxw3Zeg==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /validate-npm-package-name@5.0.0:
     resolution: {integrity: sha512-YuKoXDAhBYxY7SfOKxHBDoSyENFeW5VvIIQp2TGQuit8gpK6MnWaQelBKxso72DoxTZfZdcP3W90LqpSkgPzLQ==}
