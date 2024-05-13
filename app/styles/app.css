@@ -1,7 +1,6 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
 body {
-  --page-bg: rgb(235 235 235);
   --page-font: rgb(40 35 35);
   --main-bg: white;
   --link-font: rgb(80 130 215);
@@ -14,7 +13,6 @@ body {
   --github-hover: rgb(55 55 55);
 
   font-family: Helvetica, Arial, sans-serif;
-  background: var(--page-bg);
   color: var(--page-font);
   height: 100vh;
   width: 100vw;
@@ -25,21 +23,6 @@ body {
   flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --page-bg: rgb(42 40 40);
-    --page-font: rgb(235 235 235);
-    --main-bg: rgb(4 2 2);
-    --link-font: rgb(120 170 255);
-    --logo-border: rgb(30 30 30);
-    --time-font: rgb(162 160 160);
-    --github-bg: rgb(230 230 230);
-    --github-border: #111;
-    --github-font: black;
-    --github-hover: rgb(255 255 255);
-  }
-}
-
 main {
   background: var(--main-bg);
   padding: 4rem;
@@ -48,4 +31,18 @@ main {
 
 a {
   text-decoration: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
 }

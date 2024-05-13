@@ -16,11 +16,11 @@ overrides:
 
 dependencies:
   '@crowdstrike/glide-core-components':
-    specifier: ^0.2.0
-    version: 0.2.0(lit@3.1.2)
+    specifier: ^0.3.0
+    version: 0.3.0(lit@3.1.2)
   '@crowdstrike/glide-core-styles':
-    specifier: ^0.2.0
-    version: 0.2.0
+    specifier: ^0.2.1
+    version: 0.2.1
   ember-modifier:
     specifier: ^4.1.0
     version: 4.1.0(ember-source@5.5.0)
@@ -1471,8 +1471,8 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /@crowdstrike/glide-core-components@0.2.0(lit@3.1.2):
-    resolution: {integrity: sha512-2WF8l0+AkfSuzt+2bOxueN74NHvVWpHAuh/F+MjMVNcrEkAUsDMEOFXhro/tSYz3b+0NYVrw9gNthnAlosyT9Q==}
+  /@crowdstrike/glide-core-components@0.3.0(lit@3.1.2):
+    resolution: {integrity: sha512-IlSapX3bDUYCrNOPZtNUfqX6LQL1bmC6rnJScV7vxdrZl7L9jGwlnLdQlSOfiTJXYUdWCbiVfE029adUdecjkw==}
     engines: {node: '>= 20', pnpm: '>= 8'}
     peerDependencies:
       lit: ^3.1.0
@@ -1482,8 +1482,8 @@ packages:
       ow: 1.1.1
     dev: false
 
-  /@crowdstrike/glide-core-styles@0.2.0:
-    resolution: {integrity: sha512-6V+CTRf8m8GZp15vRoKpa5gd9W9Tl3mBq0JChpKbqxCRfryG47Q8gDOtfzGkc0E8NKaajDbDgygoucQxf69hIQ==}
+  /@crowdstrike/glide-core-styles@0.2.1:
+    resolution: {integrity: sha512-51gU/+b+S23xl/MXism0sXaqablVYe+qLyus11V2bSOoSaR6x7UJekRMjp2mT9QvyggdiEFdicfGYTYEz8cyFQ==}
     engines: {node: '>= 20', pnpm: '>= 8'}
     dev: false
 
