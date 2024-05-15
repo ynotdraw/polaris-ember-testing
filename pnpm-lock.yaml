@@ -16,8 +16,8 @@ overrides:
 
 dependencies:
   '@crowdstrike/glide-core-components':
-    specifier: ^0.3.0
-    version: 0.3.0(lit@3.1.2)
+    specifier: ^0.3.2
+    version: 0.3.2(lit@3.1.2)
   '@crowdstrike/glide-core-styles':
     specifier: ^0.2.1
     version: 0.2.1
@@ -1471,8 +1471,8 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /@crowdstrike/glide-core-components@0.3.0(lit@3.1.2):
-    resolution: {integrity: sha512-IlSapX3bDUYCrNOPZtNUfqX6LQL1bmC6rnJScV7vxdrZl7L9jGwlnLdQlSOfiTJXYUdWCbiVfE029adUdecjkw==}
+  /@crowdstrike/glide-core-components@0.3.2(lit@3.1.2):
+    resolution: {integrity: sha512-FM9Yx+pdeyCnz8w72hj52pXQo2mQ9l+gEm/s23YLy8F7lX8ZyZVJvB93+cDv57pWDNtqE5ojGXqbHxmYI/5S4g==}
     engines: {node: '>= 20', pnpm: '>= 8'}
     peerDependencies:
       lit: ^3.1.0

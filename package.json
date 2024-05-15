@@ -105,7 +105,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "@crowdstrike/glide-core-components": "^0.3.0",
+    "@crowdstrike/glide-core-components": "^0.3.2",
     "@crowdstrike/glide-core-styles": "^0.2.1",
     "ember-modifier": "^4.1.0",
     "ember-resources": "^7.0.0",
