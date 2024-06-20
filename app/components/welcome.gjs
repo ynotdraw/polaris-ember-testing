@@ -3,6 +3,8 @@ import '@crowdstrike/glide-core/button-group.button.js';
 import '@crowdstrike/glide-core/button-group.js';
 import '@crowdstrike/glide-core/button.js';
 import '@crowdstrike/glide-core/drawer.js';
+import '@crowdstrike/glide-core/dropdown.js';
+import '@crowdstrike/glide-core/dropdown.option.js';
 import '@crowdstrike/glide-core/menu.button.js';
 import '@crowdstrike/glide-core/menu.js';
 import '@crowdstrike/glide-core/status-indicator.js';
@@ -48,6 +50,47 @@ export default class Welcome extends Component {
 
           <glide-core-button slot="target" variant="secondary">Menu</glide-core-button>
         </glide-core-menu>
+
+        <glide-core-dropdown
+          label="Label"
+          name="name"
+          orientation="horizontal"
+          placeholder="Placeholder"
+          size="large"
+        >
+          <glide-core-dropdown-option
+            id="e7607939-d512-4331-bc0c-a12d9cfd31e6"
+            label="One"
+            value="one"
+          ></glide-core-dropdown-option>
+
+          <glide-core-dropdown-option
+            label="Two"
+            value="two"
+            id="450f5f78-51d7-462b-a530-d9cc82e407ee"
+          ></glide-core-dropdown-option>
+
+          <glide-core-dropdown-option
+            label="Three"
+            value="three"
+            id="5fbac827-e20b-4fe1-9281-ccd81bd72d21"
+          ></glide-core-dropdown-option>
+
+          <glide-core-dropdown-option
+            label="Four"
+            value="four"
+            id="9cf8713b-93f2-4699-a603-afe729979c88"
+          ></glide-core-dropdown-option>
+
+          <glide-core-dropdown-option
+            label="Five"
+            value="five"
+            id="afd14a19-cbdf-4ccd-80db-39ae8946f96e"
+          ></glide-core-dropdown-option>
+
+          <div slot="description">Description</div>
+
+        </glide-core-dropdown>
 
         <glide-core-button-group label="Button Group" orientation="horizontal">
           <glide-core-button-group-button value="button-1">Button 1</glide-core-button-group-button>
