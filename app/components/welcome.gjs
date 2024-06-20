@@ -1,17 +1,17 @@
-import '@crowdstrike/glide-core-components/accordion.js';
-import '@crowdstrike/glide-core-components/button-group.button.js';
-import '@crowdstrike/glide-core-components/button-group.js';
-import '@crowdstrike/glide-core-components/button.js';
-import '@crowdstrike/glide-core-components/drawer.js';
-import '@crowdstrike/glide-core-components/menu.button.js';
-import '@crowdstrike/glide-core-components/menu.js';
-import '@crowdstrike/glide-core-components/status-indicator.js';
-import '@crowdstrike/glide-core-components/tab.group.js';
-import '@crowdstrike/glide-core-components/tab.js';
-import '@crowdstrike/glide-core-components/tab.panel.js';
-import '@crowdstrike/glide-core-components/tag.js';
-import '@crowdstrike/glide-core-components/textarea.js';
-import '@crowdstrike/glide-core-components/toggle.js';
+import '@crowdstrike/glide-core/accordion.js';
+import '@crowdstrike/glide-core/button-group.button.js';
+import '@crowdstrike/glide-core/button-group.js';
+import '@crowdstrike/glide-core/button.js';
+import '@crowdstrike/glide-core/drawer.js';
+import '@crowdstrike/glide-core/menu.button.js';
+import '@crowdstrike/glide-core/menu.js';
+import '@crowdstrike/glide-core/status-indicator.js';
+import '@crowdstrike/glide-core/tab.group.js';
+import '@crowdstrike/glide-core/tab.js';
+import '@crowdstrike/glide-core/tab.panel.js';
+import '@crowdstrike/glide-core/tag.js';
+import '@crowdstrike/glide-core/textarea.js';
+import '@crowdstrike/glide-core/toggle.js';
 
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
@@ -23,7 +23,7 @@ export default class Welcome extends Component {
 
   @action
   toggleDrawer() {
-    const drawer = document.querySelector('cs-drawer');
+    const drawer = document.querySelector('glide-core-drawer');
 
     if (this.isDrawerOpen) {
       drawer?.close();
@@ -39,53 +39,53 @@ export default class Welcome extends Component {
   <template>
     <main>
       <div class="main-container">
-        <cs-button {{on "click" this.toggleDrawer}}>Toggle Drawer</cs-button>
+        <glide-core-button {{on "click" this.toggleDrawer}}>Toggle Drawer</glide-core-button>
 
-        <cs-menu>
-          <cs-menu-button label="One"></cs-menu-button>
-          <cs-menu-button label="Two"></cs-menu-button>
-          <cs-menu-button label="Three"></cs-menu-button>
+        <glide-core-menu>
+          <glide-core-menu-button label="One"></glide-core-menu-button>
+          <glide-core-menu-button label="Two"></glide-core-menu-button>
+          <glide-core-menu-button label="Three"></glide-core-menu-button>
 
-          <cs-button slot="target" variant="secondary">Menu</cs-button>
-        </cs-menu>
+          <glide-core-button slot="target" variant="secondary">Menu</glide-core-button>
+        </glide-core-menu>
 
-        <cs-button-group label="Button Group" orientation="horizontal">
-          <cs-button-group-button value="button-1">Button 1</cs-button-group-button>
-          <cs-button-group-button value="button-2">Button 2</cs-button-group-button>
-          <cs-button-group-button value="button-3">Button 3</cs-button-group-button>
-        </cs-button-group>
+        <glide-core-button-group label="Button Group" orientation="horizontal">
+          <glide-core-button-group-button value="button-1">Button 1</glide-core-button-group-button>
+          <glide-core-button-group-button value="button-2">Button 2</glide-core-button-group-button>
+          <glide-core-button-group-button value="button-3">Button 3</glide-core-button-group-button>
+        </glide-core-button-group>
       </div>
 
-      <cs-drawer style="color: black;">
+      <glide-core-drawer style="color: black;">
         <div class="drawer-container">
           Drawer content
-          <cs-accordion label="Accordion">Inner Content</cs-accordion>
+          <glide-core-accordion label="Accordion">Inner Content</glide-core-accordion>
 
-          <cs-toggle label="Toggle" summary="Example">
+          <glide-core-toggle label="Toggle" summary="Example">
             <div slot="description">Help text</div>
             <div slot="tooltip">Tooltip content</div>
-          </cs-toggle>
+          </glide-core-toggle>
 
-          <cs-textarea label="Textarea" name="textarea">
+          <glide-core-textarea label="Textarea" name="textarea">
             <div slot="description">Help text</div>
-          </cs-textarea>
+          </glide-core-textarea>
 
-          <cs-status-indicator variant="idle"></cs-status-indicator>
+          <glide-core-status-indicator variant="idle"></glide-core-status-indicator>
 
-          <cs-tab-group variant="secondary">
-            <cs-tab slot="nav" panel="1">Tab1</cs-tab>
-            <cs-tab slot="nav" panel="2">Tab2</cs-tab>
-            <cs-tab slot="nav" panel="3">Tab3</cs-tab>
+          <glide-core-tab-group variant="secondary">
+            <glide-core-tab slot="nav" panel="1">Tab1</glide-core-tab>
+            <glide-core-tab slot="nav" panel="2">Tab2</glide-core-tab>
+            <glide-core-tab slot="nav" panel="3">Tab3</glide-core-tab>
 
-            <cs-tab-panel name="1">
-              <cs-tag>Tag1</cs-tag>
-              <cs-tag>Tag2</cs-tag>
-            </cs-tab-panel>
-            <cs-tab-panel name="2">Panel 2</cs-tab-panel>
-            <cs-tab-panel name="3">Panel 3</cs-tab-panel>
-          </cs-tab-group>
+            <glide-core-tab-panel name="1">
+              <glide-core-tag>Tag1</glide-core-tag>
+              <glide-core-tag>Tag2</glide-core-tag>
+            </glide-core-tab-panel>
+            <glide-core-tab-panel name="2">Panel 2</glide-core-tab-panel>
+            <glide-core-tab-panel name="3">Panel 3</glide-core-tab-panel>
+          </glide-core-tab-group>
         </div>
-      </cs-drawer>
+      </glide-core-drawer>
 
     </main>
   </template>

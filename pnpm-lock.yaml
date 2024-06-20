@@ -15,12 +15,9 @@ overrides:
   '@glimmer/component': ^1.1.2
 
 dependencies:
-  '@crowdstrike/glide-core-components':
-    specifier: ^0.3.2
-    version: 0.3.2(lit@3.1.2)
-  '@crowdstrike/glide-core-styles':
-    specifier: ^0.2.1
-    version: 0.2.1
+  '@crowdstrike/glide-core':
+    specifier: ^0.5.0
+    version: 0.5.0(lit@3.1.2)
   ember-modifier:
     specifier: ^4.1.0
     version: 4.1.0(ember-source@5.5.0)
@@ -1471,8 +1468,8 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /@crowdstrike/glide-core-components@0.3.2(lit@3.1.2):
-    resolution: {integrity: sha512-FM9Yx+pdeyCnz8w72hj52pXQo2mQ9l+gEm/s23YLy8F7lX8ZyZVJvB93+cDv57pWDNtqE5ojGXqbHxmYI/5S4g==}
+  /@crowdstrike/glide-core@0.5.0(lit@3.1.2):
+    resolution: {integrity: sha512-3K4vLZhthccPlkZV+gZLf3qakr7i3cS7YLP/NRtCPWV13YSJSCTrH07M+kfzTQCuL9gM0Z14frL0minHctqaDw==}
     engines: {node: '>= 20', pnpm: '>= 8'}
     peerDependencies:
       lit: ^3.1.0
@@ -1480,11 +1477,6 @@ packages:
       '@floating-ui/dom': 1.6.4
       lit: 3.1.2
       ow: 1.1.1
-    dev: false
-
-  /@crowdstrike/glide-core-styles@0.2.1:
-    resolution: {integrity: sha512-51gU/+b+S23xl/MXism0sXaqablVYe+qLyus11V2bSOoSaR6x7UJekRMjp2mT9QvyggdiEFdicfGYTYEz8cyFQ==}
-    engines: {node: '>= 20', pnpm: '>= 8'}
     dev: false
 
   /@csstools/css-parser-algorithms@2.5.0(@csstools/css-tokenizer@2.2.3):

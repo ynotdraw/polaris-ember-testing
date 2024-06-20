@@ -1,4 +1,5 @@
-import '@crowdstrike/glide-core-styles';
+import '@crowdstrike/glide-core/styles/fonts.css';
+import '@crowdstrike/glide-core/styles/variables.css';
 
 import pageTitle from 'ember-page-title/helpers/page-title';
 import Route from 'ember-route-template';
