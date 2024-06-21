@@ -14,6 +14,7 @@ import '@crowdstrike/glide-core/tab.panel.js';
 import '@crowdstrike/glide-core/tag.js';
 import '@crowdstrike/glide-core/textarea.js';
 import '@crowdstrike/glide-core/toggle.js';
+import '@crowdstrike/glide-core/tooltip.js';
 
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
@@ -57,46 +58,21 @@ export default class Welcome extends Component {
           orientation="horizontal"
           placeholder="Placeholder"
           size="large"
+          multiple
         >
-          <glide-core-dropdown-option
-            id="e7607939-d512-4331-bc0c-a12d9cfd31e6"
-            label="One"
-            value="one"
-          ></glide-core-dropdown-option>
+          <glide-core-dropdown-option label="One" value="one"></glide-core-dropdown-option>
 
-          <glide-core-dropdown-option
-            label="Two"
-            value="two"
-            id="450f5f78-51d7-462b-a530-d9cc82e407ee"
-          ></glide-core-dropdown-option>
+          <glide-core-dropdown-option label="Two" value="two"></glide-core-dropdown-option>
 
-          <glide-core-dropdown-option
-            label="Three"
-            value="three"
-            id="5fbac827-e20b-4fe1-9281-ccd81bd72d21"
-          ></glide-core-dropdown-option>
+          <glide-core-dropdown-option label="Three" value="three"></glide-core-dropdown-option>
 
-          <glide-core-dropdown-option
-            label="Four"
-            value="four"
-            id="9cf8713b-93f2-4699-a603-afe729979c88"
-          ></glide-core-dropdown-option>
+          <glide-core-dropdown-option label="Four" value="four"></glide-core-dropdown-option>
 
-          <glide-core-dropdown-option
-            label="Five"
-            value="five"
-            id="afd14a19-cbdf-4ccd-80db-39ae8946f96e"
-          ></glide-core-dropdown-option>
+          <glide-core-dropdown-option label="Five" value="five"></glide-core-dropdown-option>
 
           <div slot="description">Description</div>
 
         </glide-core-dropdown>
-
-        <glide-core-button-group label="Button Group" orientation="horizontal">
-          <glide-core-button-group-button value="button-1">Button 1</glide-core-button-group-button>
-          <glide-core-button-group-button value="button-2">Button 2</glide-core-button-group-button>
-          <glide-core-button-group-button value="button-3">Button 3</glide-core-button-group-button>
-        </glide-core-button-group>
       </div>
 
       <glide-core-drawer style="color: black;">
@@ -108,6 +84,12 @@ export default class Welcome extends Component {
             <div slot="description">Help text</div>
             <div slot="tooltip">Tooltip content</div>
           </glide-core-toggle>
+
+          <glide-core-button-group label="Button Group" orientation="horizontal">
+            <glide-core-button-group-button value="button-1">Button 1</glide-core-button-group-button>
+            <glide-core-button-group-button value="button-2">Button 2</glide-core-button-group-button>
+            <glide-core-button-group-button value="button-3">Button 3</glide-core-button-group-button>
+          </glide-core-button-group>
 
           <glide-core-textarea label="Textarea" name="textarea">
             <div slot="description">Help text</div>
@@ -123,6 +105,10 @@ export default class Welcome extends Component {
             <glide-core-tab-panel name="1">
               <glide-core-tag>Tag1</glide-core-tag>
               <glide-core-tag>Tag2</glide-core-tag>
+              <glide-core-tooltip>
+                Example Tooltip
+                <glide-core-button slot="target">Tooltip</glide-core-button>
+              </glide-core-tooltip>
             </glide-core-tab-panel>
             <glide-core-tab-panel name="2">Panel 2</glide-core-tab-panel>
             <glide-core-tab-panel name="3">Panel 3</glide-core-tab-panel>
