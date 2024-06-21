@@ -16,8 +16,8 @@ overrides:
 
 dependencies:
   '@crowdstrike/glide-core':
-    specifier: ^0.5.0
-    version: 0.5.0(lit@3.1.2)
+    specifier: ^0.5.1
+    version: 0.5.1(lit@3.1.2)
   ember-modifier:
     specifier: ^4.1.0
     version: 4.1.0(ember-source@5.5.0)
@@ -1468,8 +1468,8 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /@crowdstrike/glide-core@0.5.0(lit@3.1.2):
-    resolution: {integrity: sha512-3K4vLZhthccPlkZV+gZLf3qakr7i3cS7YLP/NRtCPWV13YSJSCTrH07M+kfzTQCuL9gM0Z14frL0minHctqaDw==}
+  /@crowdstrike/glide-core@0.5.1(lit@3.1.2):
+    resolution: {integrity: sha512-xcwdCOKB/5dF7OFOOip88KZioCUeN8MVtPg6xKe7a6NZ02fK4QxBXASIg6srpmS58ujRg73Y8wmXghiIq8DgEg==}
     engines: {node: '>= 20', pnpm: '>= 8'}
     peerDependencies:
       lit: ^3.1.0
