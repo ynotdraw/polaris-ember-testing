@@ -51,28 +51,6 @@ export default class Welcome extends Component {
 
           <glide-core-button slot="target" variant="secondary">Menu</glide-core-button>
         </glide-core-menu>
-
-        <glide-core-dropdown
-          label="Label"
-          name="name"
-          orientation="horizontal"
-          placeholder="Placeholder"
-          size="large"
-          multiple
-        >
-          <glide-core-dropdown-option label="One" value="one"></glide-core-dropdown-option>
-
-          <glide-core-dropdown-option label="Two" value="two"></glide-core-dropdown-option>
-
-          <glide-core-dropdown-option label="Three" value="three"></glide-core-dropdown-option>
-
-          <glide-core-dropdown-option label="Four" value="four"></glide-core-dropdown-option>
-
-          <glide-core-dropdown-option label="Five" value="five"></glide-core-dropdown-option>
-
-          <div slot="description">Description</div>
-
-        </glide-core-dropdown>
       </div>
 
       <glide-core-drawer style="color: black;">
@@ -84,6 +62,28 @@ export default class Welcome extends Component {
             <div slot="description">Help text</div>
             <div slot="tooltip">Tooltip content</div>
           </glide-core-toggle>
+
+          <glide-core-dropdown
+            label="Label"
+            name="name"
+            orientation="horizontal"
+            placeholder="Placeholder"
+            size="large"
+            multiple
+          >
+            <glide-core-dropdown-option label="One" value="one"></glide-core-dropdown-option>
+
+            <glide-core-dropdown-option label="Two" value="two"></glide-core-dropdown-option>
+
+            <glide-core-dropdown-option label="Three" value="three"></glide-core-dropdown-option>
+
+            <glide-core-dropdown-option label="Four" value="four"></glide-core-dropdown-option>
+
+            <glide-core-dropdown-option label="Five" value="five"></glide-core-dropdown-option>
+
+            <div slot="description">Description</div>
+
+          </glide-core-dropdown>
 
           <glide-core-button-group label="Button Group" orientation="horizontal">
             <glide-core-button-group-button value="button-1">Button 1</glide-core-button-group-button>
